@@ -1,0 +1,10 @@
+{
+  "name": "APLICACAO_AULA_3",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {},
+  "scripts":{
+    "start": "node criando_Servidor.js",
+    "rotes": "node fazendoCrud.js"
+  }
+}

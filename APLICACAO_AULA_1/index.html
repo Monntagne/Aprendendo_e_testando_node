@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando requisições de API</title>
+</head>
+<body>
+    
+    <button onclick="buscar()">Buscar dados</button>
+
+
+    <script>
+        //Função que faz a chama da quando é clicado 
+        function buscar(){
+            
+            //fetch faz uma requisição HTTP para um swervidor (API)
+            //Neste caso, estamos pedindo um post especifico (id=1)
+            fetch ('https://jsonplaceholder.typicode.com/posts/1')
+            
+            
+            // O then trata o restorno da requisição
+            // Neste caso, convertendo para JSON 
+            .then(res => res.json())
+            
+
+            //Depois do JSON pronto, recebemos os dados
+            //e exibimos no console do navegador
+            .then(data => console.log(data))
+            
+
+
+        
+        
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>
